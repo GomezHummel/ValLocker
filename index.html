@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Night Market Display</title>
+    <title>Val Locker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Val Locker!</h1>
-        <p>View your Valorant Shop without needing to open Valorant</p>
+        <h1>Val Locker</h1>
     </header>
+    <!-- HTML -->
+    <div class="filter-section">
+        <button class="filter-button" onclick="toggleFilter()">Filter</button>
+        <div class="filter-dropdown" id="filterDropdown">
+            <h4>Categories</h4>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Sidearms"> Sidearms</label>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="SMGs"> SMGs</label>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Shotguns"> Shotguns</label>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Rifles"> Rifles</label>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Sniper Rifles"> Sniper Rifles</label>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Machine Guns"> Machine Guns</label>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Melee"> Melee</label>
+        </div>
+    </div>
 
-    <section class="night-market">
-        <h2>Skins</h2>
-        <!-- Products will be displayed here -->
-    </section>
-
-    <!-- <footer>
-        <p>&copy; 2024 My Night Market</p>
-    </footer> -->
+    <main>
+        <section id="skins">
+            <!-- Skins will be displayed here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -58,9 +58,16 @@ function parseSkinsData(skinsData) {
                     category = 'Other';
             }
         }
+        
+        const imageUrl = skin.displayIcon || (skin.chromas.length > 0 ? skin.chromas[0].fullRender : null); // Use fullRender if displayIcon is null
+        
+        if (!imageUrl) {
+            return ''; // Skip if both displayIcon and fullRender are null
+        }
+        
         return `
             <div class="skin-item" data-category="${category}">
-                <img src="${skin.displayIcon}" alt="${skin.displayName}" class="skin-image">
+                <img src="${imageUrl}" alt="${skin.displayName}" class="skin-image">
                 <h3>${skin.displayName}</h3>
                 <p>Category: ${category}</p>
             </div>
@@ -68,6 +75,7 @@ function parseSkinsData(skinsData) {
     });
     return skins.join('');
 }
+
 
 function toggleFilter() {
     var filterDropdown = document.getElementById("filterDropdown");

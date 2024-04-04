@@ -2,10 +2,6 @@
 
 Val Locker is a web application designed for Valorant players to explore all available skins in the game and favorite them. Users can browse through various categories of skins and mark their favorites. The application also provides a feature to receive notifications when favorited skins appear in the user's daily shop.
 
-## Description
-
-This web application provides a user-friendly interface for browsing and favoriting Valorant skins. Users can filter skins based on different categories such as Sidearms, SMGs, Rifles, Shotguns, Sniper Rifles, Machine Guns, and Melee Skins. Each category contains a list of corresponding skins with checkboxes for favoriting.
-
 ## Usage
 
 1. Open the Val Locker web application.

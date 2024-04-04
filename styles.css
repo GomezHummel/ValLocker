@@ -6,56 +6,85 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
+/* Setting the background color for the entire body */
+body {
+    background-color: #161625; /* Darker background color */
+}
+
+
+/* Importing Tungsten font */
+@font-face {
+    font-family: 'Tungsten';
+    src: url('path/to/Tungsten-Bold.woff2') format('woff2'),
+         url('path/to/Tungsten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* Basic styling for the header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #161625; /* Darker background color */
+    color: #fff; /* Text color white */
     padding: 20px;
     text-align: center;
+    /* Text shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Applying Tungsten font */
+    font-family: 'Tungsten', sans-serif;
 }
 
 /* Styling for the main section */
 main {
     padding: 20px;
+    background-color: #111111; /* Darker background color */
 }
 
-/* Styling for the skins section */
-#skins {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+/* Styling for the sidebar */
+.sidebar {
+    position: fixed; /* Keep the sidebar fixed */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120px; /* Width of the sidebar */
+    background-color: #161625; /* Darker background color */
+    color: #fff; /* Text color white */
+    /* Text shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Styling for each skin item */
-.skin-item {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+/* Styling for the Valorant logo */
+.sidebar img {
+    width: 80px; /* Adjust the width as needed */
+    display: block; /* Ensure the image takes up its own space */
+    margin-bottom: 20px; /* Add some space below the logo */
     padding: 20px;
-    border-radius: 5px;
 }
 
-/* Styling for skin images */
-.skin-image {
-    max-width: 100%;
-    height: auto;
+
+/* Styling for the filter section */
+.filter-section {
+    margin-left: 160px; /* Adjust margin left to accommodate the sidebar */
+    background-color: #161625; /* Darker background color */
+    padding-bottom: 20px;
 }
 
-/* CSS */
-.filter-button {
-    background-color: #1f64e2;
-    color: white;
-    padding: 12px 20px; /* Increased padding */
-    border: none;
-    cursor: pointer;
-    border-radius: 25px; /* Rounded edges */
-    transition: all 0.3s ease; /* Smooth transition */
-    font-size: 16px; /* Increased font size */
+/* Styling for the checkboxes and labels in the filter section */
+.filter-section label {
+    color: #fff; /* Text color white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Drop shadow */
+}
+
+/* Styling for the "Categories" text */
+.filter-section h4 {
+    color: #fff; /* Text color white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Drop shadow */
 }
 
 .filter-button:hover {
     background-color:  #1661ec; /* Darker color on hover */
 }
 
+/* Styling for the filter dropdown */
 .filter-dropdown {
     display: none;
     position: absolute;
@@ -79,4 +108,40 @@ main {
 
 .filter-dropdown label input {
     margin-right: 5px;
+}
+
+/* Styling for the skins section */
+#skins {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: #111111; /* Darker background color */
+    padding-top: 0; /* No padding on the top */
+    padding-right: 20px; /* Padding on the right */
+    padding-bottom: 20px; /* Padding on the bottom */
+    padding-left: 20px; /* Padding on the left */
+    margin-left: 100px; /* Adjusted margin left to accommodate the sidebar */
+}
+
+
+/* Styling for each skin item */
+.skin-item {
+    background-color: #161625; /* Darker background color */
+    border: 1px solid #161625; /* Darker border color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Added box shadow */
+    color: #fff; /* Text color white */
+}
+
+/* Styling for skin images */
+.skin-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling for skin text */
+.skin-item h3, .skin-item p {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }

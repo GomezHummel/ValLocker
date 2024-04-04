@@ -6,11 +6,16 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
+h1.filter-heading {
+    font-family: 'Arial', sans-serif; /* Change the font family as needed */
+    color: #ffffff; /* Change the text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow if needed */
+}
+
 /* Setting the background color for the entire body */
 body {
     background-color: #161625; /* Darker background color */
 }
-
 
 /* Importing Tungsten font */
 @font-face {
@@ -46,7 +51,7 @@ main {
     left: 0;
     bottom: 0;
     width: 120px; /* Width of the sidebar */
-    background-color: #161625; /* Darker background color */
+    background-color: #1b1b2b; /* Slightly lighter background color */
     color: #fff; /* Text color white */
     /* Text shadow */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -60,24 +65,39 @@ main {
     padding: 20px;
 }
 
-
 /* Styling for the filter section */
 .filter-section {
     margin-left: 160px; /* Adjust margin left to accommodate the sidebar */
     background-color: #161625; /* Darker background color */
     padding-bottom: 20px;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
-/* Styling for the checkboxes and labels in the filter section */
-.filter-section label {
-    color: #fff; /* Text color white */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Drop shadow */
+/* Styling for each category */
+.category {
+    flex: 1; /* Distribute available space equally */
+    margin-right: 20px; /* Add space between categories */
 }
 
-/* Styling for the "Categories" text */
-.filter-section h4 {
+/* Styling for the category headings */
+.category-heading {
+    margin-top: 80px;
+    margin-bottom: 10px;
     color: #fff; /* Text color white */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Drop shadow */
+    /* Text shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the checkboxes */
+.category label {
+    display: block;
+    color: #fff; /* Text color white */
+    margin-bottom: 8px;
+}
+
+.category input[type="checkbox"] {
+    margin-right: 5px;
 }
 
 .filter-button:hover {

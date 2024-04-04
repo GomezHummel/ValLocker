@@ -8,26 +8,65 @@
 </head>
 <body>
     <header>
-        <h1>Val Locker</h1>
+        <h1>Val Locker :)</h1>
     </header>
     <div class="filter-section">
-        <h4>Categories</h4>
-        <label><input type="checkbox" onchange="filterSkins()" name="category" value="Sidearms"> Sidearms</label>
-        <label><input type="checkbox" onchange="filterSkins()" name="category" value="SMGs"> SMGs</label>
-        <label><input type="checkbox" onchange="filterSkins()" name="category" value="Shotguns"> Shotguns</label>
-        <label><input type="checkbox" onchange="filterSkins()" name="category" value="Rifles"> Rifles</label>
-        <label><input type="checkbox" onchange="filterSkins()" name="category" value="Sniper Rifles"> Sniper Rifles</label>
-        <label><input type="checkbox" onchange="filterSkins()" name="category" value="Machine Guns"> Machine Guns</label>
-        <label><input type="checkbox" onchange="filterSkins()" name="category" value="Melee"> Melee</label>
+        <h1 class="filter-heading">Filters:</h1>
+        <div class="category">
+            <h2 class="category-heading">Sidearms</h2>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Sidearms"> Sidearms</label><br>
+            <label><input type="checkbox" name="gun" value="Classic"> Classic</label><br>
+            <label><input type="checkbox" name="gun" value="Shorty"> Shorty</label><br>
+            <label><input type="checkbox" name="gun" value="Frenzy"> Frenzy</label><br>
+            <label><input type="checkbox" name="gun" value="Ghost"> Ghost</label><br>
+            <label><input type="checkbox" name="gun" value="Sheriff"> Sheriff</label><br>
+        </div>
+        <div class="category">
+            <h2 class="category-heading">SMGs</h2>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="SMGs"> SMGs</label><br>
+            <label><input type="checkbox" name="gun" value="Stinger"> Stinger</label><br>
+            <label><input type="checkbox" name="gun" value="Spectre"> Spectre</label><br>
+        </div>
+        <div class="category">
+            <h2 class="category-heading">Rifles</h2>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Rifles"> Rifles</label><br>
+            <label><input type="checkbox" name="gun" value="Bulldog"> Bulldog</label><br>
+            <label><input type="checkbox" name="gun" value="Guardian"> Guardian</label><br>
+            <label><input type="checkbox" name="gun" value="Phantom"> Phantom</label><br>
+            <label><input type="checkbox" name="gun" value="Vandal"> Vandal</label><br>
+        </div>
+        <div class="category">
+            <h2 class="category-heading">Shotguns</h2>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Shotguns"> Shotguns</label><br>
+            <label><input type="checkbox" name="gun" value="Bucky"> Bucky</label><br>
+            <label><input type="checkbox" name="gun" value="Judge"> Judge</label><br>
+        </div>
+        <div class="category">
+            <h2 class="category-heading">Sniper Rifles</h2>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Sniper Rifles"> Sniper Rifles</label><br>
+            <label><input type="checkbox" name="gun" value="Marshal"> Marshal</label><br>
+            <label><input type="checkbox" name="gun" value="Outlaw"> Outlaw</label><br>
+            <label><input type="checkbox" name="gun" value="Operator"> Operator</label><br>
+        </div>
+        <div class="category">
+            <h2 class="category-heading">Machine Guns</h2>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Machine Guns"> Machine Guns</label><br>
+            <label><input type="checkbox" name="gun" value="Ares"> Ares</label><br>
+            <label><input type="checkbox" name="gun" value="Odin"> Odin</label><br>
+        </div>
+        <div class="category">
+            <h2 class="category-heading">Melee Skins</h2>
+            <label><input type="checkbox" onchange="filterSkins()" name="category" value="Melee Skins"> Melee Skins</label><br>
+            <label><input type="checkbox" name="gun" value="Melee"> Melee</label><br>
+        </div>
     </div>
-    <!-- HTML -->
+
     <div class="sidebar">
         <img src="assets/valorant_logo.png" alt="Valorant Logo">
     </div>
 
     <main>
         <section id="skins">
-            <!-- Skins will be displayed here -->
         </section>
     </main>
     <script src="script.js"></script>
